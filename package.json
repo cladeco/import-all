@@ -1,0 +1,27 @@
+{
+  "name": "@cladeco/import-all",
+  "version": "1.0.2",
+  "description": "Given the path to a directory containing ES6 modules, requires all of their default and named exports and returns them as an object",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cladeco/import-all.git"
+  },
+  "main": "dist/index.js",
+  "author": "Clade",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "jest-extended": "^0.11.0",
+    "regenerator-runtime": "^0.13.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "npx babel src --out-dir dist",
+    "prepublish": "npm run build"
+  }
+}
